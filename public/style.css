@@ -1,0 +1,70 @@
+/* Navigation Active State */
+nav a.active {
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* Sections */
+  .hidden {
+    display: none !important;
+  }
+  
+  .settings-container, .help-container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .setting-item, .help-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .setting-item:last-child, .help-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .setting-item label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .setting-item select {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--light-gray);
+  }
+  
+  .back-button {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background: var(--darker);
+    color: var(--light);
+  }
+  
+  .dark-mode .app,
+  .dark-mode .settings-container,
+  .dark-mode .help-container {
+    background: var(--dark);
+    color: var(--light);
+  }
+  
+  .dark-mode input,
+  .dark-mode select {
+    background: var(--darker);
+    color: var(--light);
+    border-color: var(--gray);
+  }
